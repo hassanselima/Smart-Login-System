@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+:root {
+  --main-color: #004da4;
+  --hover-color: #0558b7;
+  --secondary-color: #ffffff6b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.login-box,
+.signup-box,
+.home {
+  background-image: url("../imgs/background.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
+}
+
+.login,
+.signup {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  width: 600px;
+  max-width: 700px;
+  margin: auto;
+}
+h1.text-primary,
+a.text-primary {
+  font-weight: 600;
+  color: var(--main-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--main-color) !important;
+}
+.btn-primary:hover {
+  background-color: var(--hover-color) !important;
+}
+.sign-up,
+.log-in {
+  text-decoration: none;
+  cursor: pointer;
+}
+.sign-up:hover,
+.log-in:hover {
+  color: var(--hover-color) !important;
+}
+
+input.valid + div .message {
+  color: green;
+}
+input.inValid + div .message {
+  color: red;
+}
+
+nav {
+  background-color: var(--secondary-color);
+}
+
+.welcome-box {
+  background-color: var(--secondary-color);
+  max-width: 700px;
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}

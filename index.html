@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container-fluid login-box">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="login shadow rounded-3">
+          <h1 class="my-5 text-primary">Smart Login System</h1>
+          <div class="">
+            <div class="email mb-3">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter your email"
+                data-RegExp="emailRe"
+              />
+            </div>
+            <div class="password mb-4">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Enter your password"
+                data-RegExp="passRe"
+              />
+            </div>
+            <div>
+              <p class="text-danger fw-bold" id="incorrect"></p>
+            </div>
+            <div class="login-btn mb-4">
+              <button class="btn btn-primary w-100" id="login-btn">
+                Login
+              </button>
+            </div>
+            <div class="">
+              <p>
+                Don’t have an account?
+                <a
+                  class="text-primary sign-up"
+                  id="signupLink"
+                  href="signup.html"
+                  >Sign up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

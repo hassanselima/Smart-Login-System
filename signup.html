@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div class="container-fluid signup-box">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="signup shadow rounded-3">
+          <h1 class="my-5 text-primary">Sign Up</h1>
+          <div class="">
+            <div class="name mb-3">
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+                data-RegExp="nameRe"
+              />
+              <div>
+                <p class="text-start ps-3 fw-bold message"></p>
+              </div>
+            </div>
+            <div class="email mb-3">
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                data-RegExp="emailRe"
+              />
+              <div>
+                <p class="text-start ps-3 fw-bold message"></p>
+              </div>
+            </div>
+            <div class="password mb-4">
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Enter your password"
+                data-RegExp="passRe"
+              />
+              <div>
+                <p class="text-start ps-3 fw-bold message"></p>
+              </div>
+            </div>
+            <div>
+              <p class="text-danger fw-bold" id="incorrect"></p>
+            </div>
+            <div class="mb-4">
+              <button class="btn btn-primary w-100" id="signup-btn">
+                Sign Up
+              </button>
+            </div>
+            <div class="">
+              <p>
+                Already have an account?
+                <a class="text-primary log-in" id="loginLink" href="index.html"
+                  >Log in</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
